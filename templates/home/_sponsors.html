@@ -17,7 +17,8 @@ style="", type='') -%}
               <h4 class="modal-title" id="myModalLabel">{{ sponsor_name }}</h4>
           </div>
           <div class="modal-body">
-              {{ description }}
+              <center><img class="img-responsive sponsor-logo" src="{{ img_src }}" /></center>
+              <div class="sponsors-description">{{ description }}</div>
           </div>
           <div class="modal-footer">
               <a href="{{ href }}?ref=pyconindia2016">
@@ -63,14 +64,14 @@ style="", type='') -%}
                                                  style="padding-top: 5em",
                                                  sponsor_name="Digital Ocean",
                                                  modal="digital-ocean-modal",
-                description="DigitalOcean is the world’s 2nd largest cloud
+                description="<p>DigitalOcean is the world’s 2nd largest cloud
                     hosting platform focused on simplifying cloud
-                    infrastructure for software developers & startups. They
+                    infrastructure for software developers &amp; startups. They
                     have 13 datacenters across the world, with their latest
                     datacenter being launched in Bangalore. Trusted by 725,
                     000+ developers globally who have spun up 20MM+ Droplets
                     (virtual servers) on their infrastructure, the key
-                    features of their platform include:
+                    features of their platform include:</p>
                     <li>Powerful Hardware - Servers built on powerful Hex Core
                      machines with dedicated ECC Ram and RAID SSD storage.</li>
                     <li>55 second provisioning time for servers</li>

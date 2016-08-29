@@ -267,6 +267,20 @@ section {
     min-height: 235px;
 }
 
+.sponsors-description {
+    text-align: left;
+}
+
+.sponsor-logo {
+    max-width: 250px;
+    padding-bottom: 2em;
+}
+
+.modal-body {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 .speakers {
     /*margin-top:-80px;*/
     height: 130vh;
