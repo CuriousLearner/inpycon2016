@@ -80,10 +80,8 @@
                 <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
                     <ul class="py16navbar nav navbar-nav">
                         <li><a href="#home" class="scrollto"> HOME </a></li>
-                        <!--
                         <li><a href="#speakers" class="scrollto"> SPEAKERS </a></li>
                         <li><a href="#schedule" class="scrollto"> SCHEDULE </a></li>
-                         -->
                         <li><a href="#venue" class="scrollto"> VENUE </a></li>
                         <li><a href="#sponsors" class="scrollto"> SPONSORS </a></li>
                         <li><a href="https://in.pycon.org/blog/2016/"> BLOG </a></li>
@@ -205,23 +203,23 @@
 
 
             
-    <div class="item col-md-6 col-sm-6 col-xs-12">
+    <div class="item col-md-4 col-sm-6 col-xs-12">
         <div class="pybox speaker">
-            <div class="icon-holder text-center">
+            <figure class="icon-holder text-center speaker--photo">
                 <img src="images/speakers/andreas.jpg" class="img-responsive" style='border-radius: 10px; border: 2px solid #771616' />
-            </div>
+            </figure>
             <div class="content">
               <h3 class='speaker--name'>Andreas Mueller</h3>
-              <p class='speaker--bio'>Andreas is a Research Engineer at the NYU Center for Data Science,
+              <p class='speaker--bio'>Andreas is <strong>a Research Engineer at the NYU Center for Data Science</strong>,
                                 building open source software for data science. Previously he was
                                 a Machine Learning Scientist at Amazon, working on computer vision
                                 and forecasting problems. He is one of the core developers of the
                                 scikit-learn machine learning library, and he has been co-maintaining
                                 it for several years.</p>
-              <a href="https://github.com/amueller">
+              <a class='speaker--social-icon' target="_blank" href="https://github.com/amueller">
                 <i class="social fa fa-github-square fa-2x social-fb"></i>
               </a>
-              <a href="https://twitter.com/amuellerml">
+              <a class='speaker--social-icon' target="_blank" href="https://twitter.com/amuellerml">
                     <i class="social fa fa-twitter-square fa-2x social-tw"></i>
                 </a>
             </div>
@@ -252,7 +250,24 @@
         </div>
     </div>
 </section>
-    
+    <section id="schedule" class="schedule section">
+    <div class="row text-center">
+
+        <h2 class="title text-center"><img src="images/icons/schedule.png" /><br/> SCHEDULE</h2>
+
+        <div class="tabbable-panel">
+            <div class="tabbable-line">
+                <ul class="nav nav-tabs nav-justified responsive"></ul>
+                <div class="tab-content responsive">
+                    
+                </div>
+                <div class="row text-center">
+                    <span class="note"><small><sup>*</sup>Note: These schedules are tentative and are subjected to change as per speakers availability and/or other reasons.</span></small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- ******venue****** -->
 <section id="venue" class="venue section">
     <div class="row text-center">
@@ -261,21 +276,21 @@
         </h2>
         <div class="col-md-10 col-md-offset-1">
             <div class="pybox">
-                <center>
-                    
-                    <style>
-                        .map-overlay {
-                            background:transparent;
-                            position:relative;
-                            width:100%;
-                            height: 450px;
-                            top: 450px;
-                            margin-top: -450px;
-                        }
-                    </style>
-                    <div class="map-overlay" onClick="style.pointerEvents='none'"></div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0482704525202!2d77.1637476149793!3d28.538268795092108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdf1d45bdd082aedf!2sConvention+Center!5e0!3m2!1sen!2sin!4v1472423449446" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
-                </center>
+
+                
+                <style>
+                    .map-overlay {
+                        background:transparent;
+                        position:relative;
+                        width:100%;
+                        height: 450px;
+                        top: 450px;
+                        margin-top: -450px;
+                    }
+                </style>
+                <div class="map-overlay" onClick="style.pointerEvents='none'"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0482704525202!2d77.1637476149793!3d28.538268795092108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdf1d45bdd082aedf!2sConvention+Center!5e0!3m2!1sen!2sin!4v1472423449446" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+
                 <div class="content text-center">
                     <h3>Convention Centre</h3>
                     <span class="help-block">
@@ -544,7 +559,6 @@
             <div class="col-md-3 silver"><a data-toggle="modal" href="#iamai-modal" target="_blank">
     <div class="pybox sponsor " style="padding-top: 5em">
         <center><img class="img-responsive" src="images/IAMAI_logo.jpg" /></center>
-        <p></p>
     </div>
     </a>
     <div class="modal fade" id="iamai-modal" tabindex="-1"
@@ -593,7 +607,6 @@
             <div class="col-md-3 silver"><a data-toggle="modal" href="#" target="_blank">
     <div class="pybox sponsor " style="">
         <center><img class="img-responsive" src="images/spon.png" /></center>
-        <p></p>
     </div>
     </a>
     <div class="modal fade" id="" tabindex="-1"
@@ -623,7 +636,6 @@
             <div class="col-md-3 silver"><a data-toggle="modal" href="#" target="_blank">
     <div class="pybox sponsor " style="">
         <center><img class="img-responsive" src="images/spon.png" /></center>
-        <p></p>
     </div>
     </a>
     <div class="modal fade" id="" tabindex="-1"
@@ -654,7 +666,6 @@
     </div>
 
 </section>
-
 
     <!-- ******blog****** -->
     <section id="blog" class="blog section" style="margin-bottom:60px;">
@@ -716,11 +727,8 @@
 </footer>
     </div>
 
-
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
     <script src="js/jquery.easing.1.3.js"></script>
